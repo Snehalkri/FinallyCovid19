@@ -27,14 +27,14 @@ async function main() {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: "covid19static@gmail.com", // generated ethereal user
-      pass: "covid19@123", // generated ethereal password
+      user: "abc@gmail.com", // generated ethereal user
+      pass: "abcdefghijklmnopqrstuvwxyz", // generated ethereal password
     },
   });
 
   // send mail with defined transport object
     await transporter.sendMail({
-    from: '"Team Infinity" <covid19static@gmail.com>', // sender address
+    from: '"Team Infinity" <abc@gmail.com>', // sender address
     to: email, // list of receivers
     subject: "Successfully Registered.", // Subject line
     text: "Thank you for reaching us you are successfully registered.", // plain text body
